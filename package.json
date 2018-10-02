@@ -1,0 +1,24 @@
+{
+  "name": "ezchannel",
+  "version": "1.0.0",
+  "description": "Lightweight library to create custom events and trigger and subscribe them from everywhere. Works standalone or with other frameworks like react.js or vue.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AICDEV/ez-channel.git"
+  },
+  "author": "AICDEV",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AICDEV/ez-channel/issues"
+  },
+  "homepage": "https://github.com/AICDEV/ez-channel#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
