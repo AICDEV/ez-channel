@@ -13,6 +13,23 @@ Package is available here: https://www.npmjs.com/package/ez-channel
   npm i ez-channel
 ```
 
+## Usage
+
+Just include it into your web or server project
+
+node
+
+```javascript
+  const Channel = require('ez-channel');
+```
+
+web
+
+```javascript
+  import {Channel} from 'ez-channel';
+```
+
+or you can the include the transpiled script.
 
 ## create channel
 
