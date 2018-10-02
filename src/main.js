@@ -8,21 +8,13 @@ class Channel {
       this._init();
     }
 
-    _isBrowser() {
-      if(typeof window !== "undefined" ) {
-        return true;
-      }
-
-      return false;
-    }
-
     _init() {
         this._getVersion();
         this._buildChannelArray();
     }
 
     _getVersion() {
-        this.channel.version = '1.1.3';
+        this.channel.version = '1.2.2';
     }
 
     _buildChannelArray() {
@@ -96,7 +88,7 @@ class Channel {
 
     subscribe() {
 
-        return {send: this._send, on: this._on};
+        return {send: this._send.bind(this), on: this._on.bind(this)};
     }
 
     create(channel) {
