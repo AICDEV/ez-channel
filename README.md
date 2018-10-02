@@ -5,6 +5,14 @@ Lightweight library to create custom events and trigger and subscribe them from 
 
 Sometimes you need a simple implementation to create global channels and subscribe them from other pieces of code, components or stuff like that. With ez-channel it is easy ;-)
 
+## Installation
+
+Package is available here: https://www.npmjs.com/package/ez-channel
+
+```sh
+  npm i ez-channel
+```
+
 
 ## create channel
 
