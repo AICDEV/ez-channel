@@ -1,16 +1,11 @@
 class Channel {
     constructor() {
+      if(window.ezChannel !== "undefined" && window.ezChannel !== {} ) {
+          window.ezChannel = {};
+      }
 
-        if(!this._isBrowser()) {
-          throw new Error("ezChannel has currently no support to run outside a browser");
-        } else {
-          if(window.reactChannel !== "undefined" && window.reactChannel !== {} ) {
-              window.reactChannel = {};
-          }
-
-          this.channel = window.reactChannel;
-          this._init();
-        }
+      this.channel = window.ezChannel;
+      this._init();
     }
 
     _isBrowser() {
@@ -27,7 +22,7 @@ class Channel {
     }
 
     _getVersion() {
-        this.channel.version = '0.1';
+        this.channel.version = '1.1.3';
     }
 
     _buildChannelArray() {
