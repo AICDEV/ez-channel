@@ -33,7 +33,7 @@ var Channel = function () {
     }, {
         key: '_getVersion',
         value: function _getVersion() {
-            this.channel.version = '1.2.2';
+            this.channel.version = '1.2.4';
         }
     }, {
         key: '_buildChannelArray',

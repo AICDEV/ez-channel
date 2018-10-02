@@ -23,7 +23,7 @@ class Channel {
     }
 
     _getVersion() {
-        this.channel.version = '1.2.2';
+        this.channel.version = '1.2.4';
     }
 
     _buildChannelArray() {
