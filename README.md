@@ -29,7 +29,7 @@ web
   import {Channel} from 'ez-channel';
 ```
 
-or you can include the transpiled script.
+or you can include the transpiled script from dist folder.
 
 ## create channel
 
