@@ -1,10 +1,19 @@
+const isNode = require('detect-node');
+
 class Channel {
     constructor() {
-      if(window.ezChannel !== "undefined" && window.ezChannel !== {} ) {
-          window.ezChannel = {};
+
+      if(!isNode) {
+        if(window.ezChannel !== "undefined" && window.ezChannel !== {} ) {
+            window.ezChannel = {};
+        }
+
+        this.channel = window.ezChannel;
+      } else {
+        global.ezChannel = {};
+        this.channel = global.ezChannel;
       }
 
-      this.channel = window.ezChannel;
       this._init();
     }
 
