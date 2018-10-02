@@ -14,11 +14,11 @@ class Channel {
     }
 
     _isBrowser() {
-      if(typeof module !== "undefined" && module.exports) {
-        return false;
+      if(typeof window !== "undefined" ) {
+        return true;
       }
 
-      return true;
+      return false;
     }
 
     _init() {
