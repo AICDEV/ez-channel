@@ -30,7 +30,7 @@ node
 web
 
 ```javascript
-  import {Channel} from 'ez-channel';
+  import Channel from 'ez-channel';
 ```
 
 or you can include the transpiled script from dist folder.
